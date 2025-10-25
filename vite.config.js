@@ -6,6 +6,12 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '',
+
+  define: {
+    __VUE_OPTIONS_API__: false,
+  },
+
   plugins: [
     vue(),
     vueDevTools(),
